@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/e9acda1d5e.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="background-dark">
+
+    <div class="parent">
+    
+        <div class="round border-radius shadow">
+
+            <h2 class="text-dark">Round</h2>
+            <div id = "number-of-round" class="text-dark">0</div>
+
+        </div>
+
+
+        <div class="counters">
+
+            <div class="counterWindow background-light border-radius padding-s shadow">
+                <h2 class="text-dark">Your Score</h2>
+                <div id = "your-score" class="score-number text-dark">0</div>
+            </div>
+
+            <div class="counterWindow background-light border-radius padding-s shadow">
+                <h2 class="text-dark">Computer Score</h2>
+                <div id = "computer-score" class="score-number text-dark">0</div>
+            </div>
+
+        </div>
+
+
+        <div class="results">
+
+            <div class="resultWindow background-light border-radius padding-s shadow">
+                <h2 class="text-dark">Your Play</h2>
+                <div class="plays" id="playerPlay">
+                    <div id="playerPlayIcon"></div>
+                </div>
+            </div>
+            
+            <div class="resultWindow background-light border-radius padding-s shadow">
+                <h2 class="text-dark">Computer Play</h2>
+                <div class="plays" id="computerPlay">
+                    <div id="computerPlayIcon"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>  
+
+
+
+
+    <div class="cards">
+
+        <div class="card background-light border-radius padding-m shadow">
+            <img src="hand-rock-solid.svg" width="50" class="margin-bottom-s"></img>
+            <button type="button" id="ROCK">Rock</button>
+        </div>
+
+        <div class="card background-light border-radius padding-m shadow">
+            <img src="hand-paper-solid.svg" width="60" class="margin-bottom-s" ></img>
+            <button type="button" id="PAPER">Paper</button>
+        </div>
+
+        <div class="card background-light border-radius padding-m shadow">
+            <img src="hand-scissors-solid.svg" width="50" class="margin-bottom-s"></img>
+            <button type="button" id="SCISSORS">Scissors</button>
+        </div>
+
+    </div>
+    
+
+
+
+
+</body>
+
+<script src="JS.js"></script>
+
+</html>

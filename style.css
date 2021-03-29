@@ -1,0 +1,149 @@
+body {
+  margin: 3% 20% 3% 20%;
+}
+
+/* Utility Classes */
+
+.background-light {
+  background-color: #ffffff;
+}
+
+.background-dark {
+  background-color: #e6e6e6;
+}
+
+.border-radius {
+  border-radius: 22px;
+}
+
+.shadow {
+  box-shadow: 4px 4px 8px rgb(194, 194, 194);
+}
+
+
+/* Typography */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+.text-dark {
+  color: #3d3d3d;
+}
+
+/* Design Assets */
+
+button {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(90deg, rgba(84,9,121,1) 0%, rgb(53, 51, 173) 100%);  
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+
+/* Paddings and Margins */
+
+.margin-bottom-s {
+  margin-bottom: 0.5em;
+}
+
+.padding-s {
+  padding: 1em 1em 1em 1em;
+}
+
+.padding-m {
+  padding: 3em 3em 3em 3em;
+}
+
+
+/* Tags */
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.8fr auto;
+  row-gap: 10px;
+}
+
+.round {
+  grid-column: 4/5;
+  background-color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.counters {
+  grid-column: 2/7;
+  display: flex;
+  
+}
+
+.counters > *:not(:first-child){
+  margin-left: 1em;
+}
+
+.counterWindow {
+  flex: 1 1 0%;
+}
+
+.plays {
+
+}
+
+.results {
+  grid-column: 3/6;
+  display: flex;
+}
+
+.results > *:not(:first-child){
+  margin-left: 1em;
+}
+
+.resultWindow {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-icon {
+  color: green;
+}
+
+.play-icon {
+  width: 80px;
+}
+
+.score-number {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#number-of-round {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
